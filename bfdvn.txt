@@ -1,0 +1,73 @@
+ <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+              <p class="text-muted mb-1"><span> <?php echo $row['Full_name']; ?>.</span><p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Staff ID</p>
+              </div>
+              <div class="col-sm-9">
+              <p class="text-muted mb-1"><span> <?php echo $row['MrelID']; ?>.</span><p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Email</p>
+              </div>
+              <div class="col-sm-9">
+              <p class="text-muted mb-1"><span> <?php echo $row['email']; ?>.</span><p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Date Of Birth</p>
+              </div>
+              <div class="col-sm-9">
+              <p class="text-muted mb-1"><span> <?php echo $row['Date_of_birth']; ?>.</span><p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Gender</p>
+              </div>
+              <div class="col-sm-9">
+              <p class="text-muted mb-1"><span> <?php echo $row['Gender']; ?>.</span><p>
+              </div>
+            </div>
+            
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Phone</p>
+              </div>
+              <div class="col-sm-9">
+              <p class="text-muted mb-1"><span> <?php echo $row['Phone_number']; ?>.</span><p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Phone 2 (optional)</p>
+              </div>
+              <div class="col-sm-9">
+              <p class="text-muted mb-1"><span> <?php echo $row['Phone_number2']; ?>.</span><p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Region</p>
+              </div>
+              <div class="col-sm-9">
+              <p class="text-muted mb-1"><span> <?php echo $row['Region']; ?>.</span><p>
+              </div>
+            </div>
