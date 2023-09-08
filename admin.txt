@@ -1,0 +1,52 @@
+    1  ls
+    2  mrel-admin
+    3  mkdir mrel-admin
+    4  ls
+    5  cd mrel-admin/
+    6  cd
+    7  cd tenants-admin
+    8  cd tenants_admin/
+    9  git clone [200~https://github.com/teckla001/mrel-admin.git~
+   10  git clone https://github.com/teckla001/mrel-admin.git
+   11  ls
+   12  cp * mrel-admin/
+   13  ls
+   14  cp -r * mrel-admin/
+   15  ls
+   16  ls mrel-admin/
+   17  clear
+   18  ls
+   19  rm -r mrel-admin/
+   20  ls
+   21  git clone https://github.com/teckla001/mrel-admin.git
+   22  mv ./* mrel-admin/
+   23  ls
+   24  cd mrel-admin/
+   25  ls ../
+   26  cd ..
+   27  cd ..
+   28  ls
+   29  clear
+   30  cd test_repo/
+   31  ls
+   32  rm -r mrel-admin/
+   33  ls
+   34  clear
+   35  ls ../
+   36  cp ../tenants_admin/ ./
+   37  ls
+   38  cp -r ../tenants_admin/ ./
+   39  ls
+   40  ls ../
+   41  ls tenants_admin/
+   42  mv tenants_admin/mrel-admin/ ./
+   43  ls
+   44  ls tenants_admin/
+   45  rm tenants_admin/
+   46  rmdir tenants_admin/
+   47  ls
+   48  cd mrel-admin/
+   49  ls
+   50  git status
+   51  git add -A && git commit -m 'Added mrel administration files' && git checkout -b admin && git push --set-upstream origin admin
+   52  history > admin.txt

@@ -33,55 +33,69 @@
           </div>
         </div>
       </nav>
-      <div style=" display: flex; justify-content: center; margin-top: 5%;">
-        <form class="row g-3 needs-validation" novalidate style="color: whitesmoke; margin-top: 2%;" onsubmit="sendEmail(); reset(); return false;" name="emailcontactform">
-          <div class="col-md-12 position-relative">
-  
-            <p style="margin-left: 0cm; text-align: center;"><h5> STAFF REGISTRATION REQUEST.</h5></p>
-  
-            <hr class="my-4">
-            
-            <div class="col-md-12 position-relative">
-                <label for="validationTooltip01" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" name="userName" required>
-              </div>
-            <div class="col-md-12 position-relative">
-              <label for="validationTooltip01" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" name="userEmail" required>
+      <div style=" display: flex; justify-content: center; margin-top: 10%;">
+        <div class="container text-white" style="background-color: rgb(1, 56, 56);">
+          <div class="row">
+            <div class="col-md-6 p-5 text-white" style="background-color: rgb(2, 98, 98);">
+              <h1>Hi There!</h1>
+              <h4>
+                Fill in the provided request form so as to be registered as an official staff member and to be able to access the system. 
+              </h4>
             </div>
-            <div class="col-md-12 position-relative">
-              <label for="validationTooltip03" class="form-label">Phone Number</label>
-              <input type="text" class="form-control" id="phone" name="phone" required>
-            </div>
-            <div class="col-md-12 position-relative">
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message </label>
-                    <textarea class="form-control" id="message" rows="4" name="userMessage"></textarea>
-                  </div>
-            </div>
-           <div class="col-12">
-            <button class="btn btn-dark" type="submit">Send</button>
-            <br>
-          </div>
-          
-      </form>
-     </div>
+            <div class="col-md-6 border-left py-3">
+              <h1>Request Form</h1>
 
-    <script src =" https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail(){
-        Email.send({
-          Host :"smtp.gmail.com",
-          username : "avinash6252@gmail.com",
-          Password : "Malaika2002",
-          To : 'teckla.lyaruu@gmail.com',
-          From : document.getElementById("email").value,
-          Subject : " Staff  application request",
-          Body : "this is the body"
-        }). then(
-          message => alert(message)
-        );
-      }
-    </script>
+              <hr class="my-4">
+              
+              <form id="form">
+              <div class="form-group">
+                <h5 for="name"> Your Name</h5>
+                <input class="form-control" type="text" name="from_name" id="from_name">
+              </div>
+              <div class="form-group">
+                <h5 for="email">Employer's name</h5>
+                <input class="form-control" type="text" name="to_name" id="to_name">
+              </div>
+              <div class="form-group">
+                <h5 for="message">Message</h5>
+                <textarea class="form-control" rows="3" type="text" name="message" id="message" ></textarea>
+              </div>
+              <br>
+              <input class="btn btn-dark" type="submit" id="button" value="Send Email" >
+              <hr class="my-4">
+            </div>
+          </div>
+        </div>
+     </div>
+    </form>
+
+     <script type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   
+   <script type="text/javascript">
+     emailjs.init('hRnio0wFRxhrDnxXs')
+   </script>
+   <script>
+   const btn = document.getElementById('button');
+
+    document.getElementById('form')
+     .addEventListener('submit', function(event) {
+       event.preventDefault();
+    
+       btn.value = 'Sending...';
+    
+       const serviceID = 'service_h0y7fvf';
+       const templateID = 'template_vpajqvk';
+    
+       emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'Send Email';
+          alert('Sent!');
+        }, (err) => {
+          btn.value = 'Send Email';
+          alert(JSON.stringify(err));
+        });
+    });</script>
+   
   </body>
 </html>
