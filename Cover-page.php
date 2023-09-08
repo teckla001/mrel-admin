@@ -18,16 +18,25 @@
           </div>
         </div>
       </nav>
-         <div class="card" style="margin-left: 35%; margin-top: 9%; margin-right: 35%; margin-bottom: 5%; background-color: rgb(1, 86, 86); border: none; " id="test">
-             <div class="card-body" style="display: flex; justify-content: center;" >
+      <div style=" display: flex; justify-content: center; margin-top: 5%;">
+        <div class="container text-white" style="background-color: rgb(1, 56, 56);">
+          <div class="row">
+            <div class="col-md-6 p-5 text-white" style="background-color: rgb(2, 98, 98);">
+              <h1>Hi There!</h1>
+              <h4>Welcome to Malaika Real Estate LTD official website in which includes rental and tenant managment</h4>
+              <p>
+                * Fill in the log-in form so as to access the website. 
+              </p>
+            </div>
+            <div class="col-md-6 border-left py-3">
                  <table style="border: none;" width="100%" cellspacing="0" cellpadding="0">
                      <tbody>
                      <tr>
-                     <td style="display: flex; justify-content:center; background:  rgb(1, 86, 86);" valign="top"><p style="margin-left: 0cm; text-align: center;"><b><span lang="EN-GB"><img src="apartment.jpg" alt="logo" width="60" height="60"></span></b></p>
+                     <td style="display: flex; justify-content:center; background:   rgb(1, 56, 56);" valign="top"><p style="margin-left: 0cm; text-align: center;"><b><span lang="EN-GB"><img src="apartment.jpg" alt="logo" width="60" height="60"></span></b></p>
                      </td>
                  </tr> 
                      <tr>
-                         <td style="display: flex; justify-content:center; background:  rgb(1, 86, 86);" valign="top">
+                         <td style="display: flex; justify-content:center; background:   rgb(1, 56, 56);" valign="top">
                          <p style="margin-left: 0cm; text-align: center;"><h4 style="color: whitesmoke;">MALAIKA REAL ESTATE LIMITED</h4></span></p>
                          <hr class="my-4">
                  </td>
@@ -36,8 +45,9 @@
                  
                  ?>
                  <tr>
-                   <td style="display: flex; justify-content:center; background:  rgb(1, 86, 86);" valign="top">
+                   <td style="display: flex; justify-content:center; background:   rgb(1, 56, 56);" valign="top">
                    <p style="text-align: center;"><h5 style="color: whitesmoke;">Login [Adminstration]</h5></p>
+                   <hr class="my-4" style="color: white;">
            </td>
            </tr>
                  <tr>
@@ -46,7 +56,7 @@
                       <form class="row g-3 needs-validation" novalidate
                              action="" method="POST" autocomplete="off" enctype="multipart/form-data">
                          <div class="col-md-12 position-relative">
-                             <label for="validationTooltipUsername" class="form-label">email</label>
+                             <label for="validationTooltipUsername" class="form-label">E-mail</label>
                              <div class="input-group has-validation">
                                <input type="email" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" name="email" required>
                                <div class="invalid-tooltip">
@@ -67,6 +77,8 @@
                            <button class="btn btn-dark"  name="submit" type="submit" id="btn">Login</button>
                            
                          </div>
+</div>
+</div>
 
             <?php 
                 $hostname = "localhost";
